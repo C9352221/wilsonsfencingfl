@@ -321,19 +321,27 @@
             <input id="ef-phone" type="tel" name="Phone" required placeholder="(813) 000-0000">
           </div>
         </div>
-        <div class="form-row">
-          <div class="field">
-            <label for="ef-email">Email</label>
-            <input id="ef-email" type="email" name="Email" placeholder="you@email.com">
-          </div>
-          <div class="field">
-            <label for="ef-area">City / Area</label>
-            <input id="ef-area" type="text" name="City or Area" placeholder="e.g. Bradenton, Manatee County">
-          </div>
+        <div class="field">
+          <label for="ef-email">Email</label>
+          <input id="ef-email" type="email" name="Email" placeholder="you@email.com">
         </div>
         <div class="field">
-          <label for="ef-address">Full Property Address</label>
-          <input id="ef-address" type="text" name="Property Address" required placeholder="Street address, city, state, ZIP">
+          <label for="ef-street">Street Address</label>
+          <input id="ef-street" type="text" name="Street Address" required placeholder="123 Main St">
+        </div>
+        <div class="form-row-3">
+          <div class="field">
+            <label for="ef-city">City</label>
+            <input id="ef-city" type="text" name="City" required placeholder="Bradenton">
+          </div>
+          <div class="field">
+            <label for="ef-state">State</label>
+            <input id="ef-state" type="text" name="State" required value="FL" placeholder="FL" maxlength="2">
+          </div>
+          <div class="field">
+            <label for="ef-zip">ZIP</label>
+            <input id="ef-zip" type="text" name="ZIP" required inputmode="numeric" placeholder="34209" maxlength="10">
+          </div>
         </div>
         <div class="field">
           <label for="ef-type">Fence Type</label>
