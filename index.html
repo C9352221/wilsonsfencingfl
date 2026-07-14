@@ -310,7 +310,7 @@
       <h2 class="section-title">Free Estimates &middot; No Pressure</h2>
       <p>Tell us what you need, where you are, and we'll come out, take a look, and give you a real number. No high-pressure sales, no callbacks for weeks.</p>
 
-      <form class="estimate-form" id="estimateForm" action="https://formsubmit.co/ajax/gamehnt17@gmail.com" method="POST">
+      <form class="estimate-form" id="estimateForm" action="https://api.web3forms.com/submit" method="POST">
         <div class="form-row">
           <div class="field">
             <label for="ef-name">Name</label>
@@ -360,10 +360,10 @@
           <label for="ef-msg">Project Details</label>
           <textarea id="ef-msg" name="Message" rows="4" placeholder="Roughly how much fencing, what it's for, any deadlines"></textarea>
         </div>
-        <input type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" style="display:none">
-        <input type="hidden" name="_subject" value="New Free Estimate Request - Wilson's Fencing">
-        <input type="hidden" name="_template" value="table">
-        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="access_key" value="fb078427-5253-4ade-8256-c3be1282637a">
+        <input type="hidden" name="subject" value="New Free Estimate Request - Wilson's Fencing">
+        <input type="hidden" name="from_name" value="Wilson's Fencing Website">
+        <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" style="display:none" aria-hidden="true">
         <button type="submit" class="btn btn-primary form-submit">Request My Free Estimate</button>
         <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
       </form>
