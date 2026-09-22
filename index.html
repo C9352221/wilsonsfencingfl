@@ -434,11 +434,9 @@
     document.getElementById('year').textContent = new Date().getFullYear();
 
     // ---- Google reviews -------------------------------------------------
-    // Paste Bill's two Google links here and the review block appears.
-    // Both come from the Google Business Profile: "Ask for reviews" gives
-    // the write link; the profile's own share link gives the read link.
-    var GOOGLE_READ_URL  = '';   // e.g. https://g.page/wilsons-...
-    var GOOGLE_WRITE_URL = '';   // e.g. https://g.page/r/XXXXXXXX/review
+    // Bill's Google Business Profile links, sent 2026-09-23.
+    var GOOGLE_READ_URL  = 'https://g.page/r/CSux0zK3CPQxEBE';
+    var GOOGLE_WRITE_URL = 'https://g.page/r/CSux0zK3CPQxEBE/review';
     (function () {
       var box = document.getElementById('greviews');
       if (!box || !GOOGLE_WRITE_URL) return;      // stays hidden until filled in
