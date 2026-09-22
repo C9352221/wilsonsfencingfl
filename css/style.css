@@ -260,3 +260,54 @@ footer .small { font-size: 0.82rem; opacity: 0.6; }
 /* 3-column address row (Street handled full-width above) */
 .form-row-3 { display: grid; grid-template-columns: 2fr 0.8fr 1fr; gap: 18px; }
 @media (max-width: 600px) { .form-row-3 { grid-template-columns: 1fr 1fr; } }
+
+
+/* ===== SISTER SITE CROSS-REFERRAL ===== */
+.sister { background: var(--cream); border-top: 1px solid rgba(0,0,0,.06); }
+.sister-card {
+  background: var(--white); border-radius: 16px; overflow: hidden;
+  box-shadow: var(--shadow-lg, 0 18px 40px rgba(0,0,0,.12));
+  display: grid; grid-template-columns: 8px 1fr; align-items: stretch;
+}
+.sister-stripe { background: var(--orange, #d94616); }
+.sister-body { padding: 40px 44px; }
+.sister-eyebrow {
+  display: inline-block; font-size: .78rem; font-weight: 800; letter-spacing: .12em;
+  text-transform: uppercase; color: var(--orange, #d94616); margin-bottom: 10px;
+}
+.sister-body h3 { font-size: 1.85rem; line-height: 1.2; margin: 0 0 12px; color: var(--black); }
+.sister-body p { margin: 0 0 24px; max-width: 58ch; color: rgba(0,0,0,.72); }
+.sister-cta {
+  display: inline-flex; align-items: center; gap: 10px; background: var(--orange, #d94616); color: #fff;
+  font-weight: 700; padding: 15px 28px; border-radius: 8px; text-decoration: none;
+  transition: background .2s, transform .2s;
+}
+.sister-cta:hover { background: var(--orange-dark, #b3380e); transform: translateY(-2px); }
+.sister-cta span { font-size: 1.15em; line-height: 1; }
+@media (max-width: 720px) {
+  .sister-card { grid-template-columns: 1fr; }
+  .sister-stripe { height: 8px; }
+  .sister-body { padding: 30px 24px; }
+  .sister-body h3 { font-size: 1.45rem; }
+}
+
+/* ===== GOOGLE REVIEWS ===== */
+.greviews { text-align: center; margin-top: 44px; }
+.greviews-stars { color: #fbbc04; font-size: 1.5rem; letter-spacing: 3px; margin-bottom: 8px; }
+.greviews p { margin: 0 auto 22px; max-width: 46ch; color: rgba(0,0,0,.7); }
+.greviews-btns { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+.g-btn {
+  display: inline-flex; align-items: center; gap: 10px; padding: 14px 26px; border-radius: 8px;
+  font-weight: 700; text-decoration: none; border: 2px solid #dadce0; background: #fff;
+  color: #3c4043; transition: box-shadow .2s, transform .2s, border-color .2s;
+}
+.g-btn:hover { box-shadow: 0 6px 18px rgba(0,0,0,.12); transform: translateY(-2px); border-color: #c6c9cd; }
+.g-btn.primary { background: var(--orange, #d94616); border-color: var(--orange, #d94616); color: #fff; }
+.g-btn.primary:hover { background: var(--orange-dark, #b3380e); border-color: var(--orange-dark, #b3380e); }
+.g-mark { font-weight: 800; letter-spacing: -1px; }
+.g-mark .b { color: #4285F4; } .g-mark .r { color: #EA4335; }
+.g-mark .y { color: #FBBC05; } .g-mark .g { color: #34A853; }
+.g-btn.primary .g-mark span { color: #fff; }
+.greviews[hidden] { display: none; }
+/* on the dark reviews band */
+.testimonials .greviews p { color: rgba(0,0,0,.7); }

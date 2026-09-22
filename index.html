@@ -304,6 +304,39 @@
   </section>
 
   <!-- CONTACT -->
+
+  <!-- GOOGLE REVIEWS -->
+  <section class="sister" style="background:var(--white)">
+    <div class="container">
+
+      <!-- GOOGLE REVIEWS -->
+      <div class="greviews" id="greviews" hidden>
+        <div class="greviews-stars">&#9733; &#9733; &#9733; &#9733; &#9733;</div>
+        <p>If Bill and the crew did right by you, a review on Google helps more Florida families find us than anything else we do.</p>
+        <div class="greviews-btns">
+          <a class="g-btn" id="g-read" href="#" target="_blank" rel="noopener">Read our <span class="g-mark"><span class="b">G</span><span class="r">o</span><span class="y">o</span><span class="b">g</span><span class="g">l</span><span class="r">e</span></span> reviews</a>
+          <a class="g-btn primary" id="g-write" href="#" target="_blank" rel="noopener">Leave us a review</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- SISTER SITE -->
+  <section class="sister">
+    <div class="container">
+      <div class="sister-card">
+        <div class="sister-stripe"></div>
+        <div class="sister-body">
+          <span class="sister-eyebrow">Same family &middot; Same phone</span>
+          <h3>We&rsquo;re building the fence. Let&rsquo;s get those critters out too.</h3>
+          <p>A new fence keeps them out. It doesn&rsquo;t get out what is already in the attic. Wilson&rsquo;s Animal Removal handles raccoons, opossums, armadillos, squirrels and snakes &mdash; same trucks, same family, same number you already have.</p>
+          <a class="sister-cta" href="https://wilsonsanimalremoval.com" target="_blank" rel="noopener">See Wilson&rsquo;s Animal Removal <span>&rarr;</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section class="contact" id="contact">
     <div class="container">
       <span class="section-eyebrow">Get Your Fence Built</span>
@@ -399,6 +432,21 @@
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
+
+    // ---- Google reviews -------------------------------------------------
+    // Paste Bill's two Google links here and the review block appears.
+    // Both come from the Google Business Profile: "Ask for reviews" gives
+    // the write link; the profile's own share link gives the read link.
+    var GOOGLE_READ_URL  = '';   // e.g. https://g.page/wilsons-...
+    var GOOGLE_WRITE_URL = '';   // e.g. https://g.page/r/XXXXXXXX/review
+    (function () {
+      var box = document.getElementById('greviews');
+      if (!box || !GOOGLE_WRITE_URL) return;      // stays hidden until filled in
+      document.getElementById('g-read').href  = GOOGLE_READ_URL || GOOGLE_WRITE_URL;
+      document.getElementById('g-write').href = GOOGLE_WRITE_URL;
+      box.hidden = false;
+    })();
+
 
     // Mobile menu toggle
     (function () {
